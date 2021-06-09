@@ -6,11 +6,14 @@ ruby "3.0.1"
 gem "rails"
 gem "pg"
 gem "puma"
-gem "sass-rails"
-gem "jbuilder"
 
-# Use Active Storage variant
-# gem "image_processing", "~> 1.2"
+gem "jbuilder"
+gem "rexml" # required by activesupport. It's a bundled gem in ruby > 3
+
+gem "sass-rails"
+gem "hotwire-rails"
+gem "tailwindcss-rails"
+gem "image_processing"
 
 gem "bootsnap", require: false
 
