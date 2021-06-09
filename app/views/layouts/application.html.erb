@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html class="min-h-screen">
   <head>
     <title>Railsgram</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -14,7 +15,9 @@
     <%= yield :head %>
   </head>
 
-  <body>
-    <%= yield %>
+  <body class="bg-gray-100 h-screen">
+    <div class="max-w-md mx-auto bg-white border border-gray-300 shadow-lg h-full">
+      <%= yield %>
+    </div>
   </body>
 </html>

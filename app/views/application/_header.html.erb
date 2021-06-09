@@ -1,0 +1,10 @@
+<header class="flex items-center justify-between border-b border-gray-300 p-3">
+  <h3 class="font-medium"><%= link_to "Railsgram", root_path %></h3>
+
+  <div class="" id="new-post-button">
+    <%= form_with model: Post.new, data: { controller: "form" } do |form| %>
+      <%= form.label :original_picture, "+", class: "text-xl rounded-full h-10 w-10 flex items-center justify-center bg-blue-600 text-white cursor-pointer" %>
+      <%= form.file_field :original_picture, class: "hidden", data: { action: "change->form#submit"} %>
+    <% end %>
+  </div>
+</header>
