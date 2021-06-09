@@ -1,3 +1,15 @@
-<header class="flex items-center justify-between border-b border-gray-300 p-3">
-  <h3 class="font-medium"><%= link_to "Railsgram", root_path %></h3>
-</header>
+<%= render "header" %>
+
+<main id="posts" class="flex flex-col h-full">
+  <% if @posts.any? %>
+    <% @posts.each do |post| %>
+      <%= link_to post do %>
+        <%= render post %>
+      <% end %>
+    <% end %>
+  <% else %>
+    <div class="bg-gray-100 flex-grow">
+      <h3 class="text-center w-full mt-20">No posts yet!</h3>
+    </div>
+  <% end %>
+</main>

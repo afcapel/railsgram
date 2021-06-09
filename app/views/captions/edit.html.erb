@@ -1,0 +1,16 @@
+<div class="p-4 h-screen">
+  <%= form_with(model: @post, url: post_caption_path(@post)) do |form| %>
+    <div class="flex justify-between items-baseline">
+      <h1 class="font-medium mb-5">New post</h1>
+      <%= form.submit "✓", class: "text-2xl text-blue-600 bg-white cursor-pointer"  %>
+    </div>
+
+    <div class="mb-3 h-24 w-24 overflow-hidden">
+      <%= image_tag @post.picture.variant(resize_to_fill: [128, 128]), loading: "lazy" %>
+    </div>
+
+    <%= form.text_area :caption, class: "mt-1 block w-full h-full border-gray-300", placeholder: "Write a caption", rows: "8" %>
+  <% end %>
+</div>
+
+

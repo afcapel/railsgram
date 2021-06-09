@@ -1,0 +1,9 @@
+<div class="post mb-5 bg-white" id="<%= dom_id(post) %>">
+  <div class="post-picture mb-3">
+    <%= image_tag post.picture.variant(resize_to_limit: [448, 448]) %>
+  </div>
+
+  <div class="post-caption p-3 text-sm">
+    <%= simple_format(post.caption) %>
+  </div>
+</div>
