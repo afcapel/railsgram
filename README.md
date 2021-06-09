@@ -1,24 +1,2 @@
 # README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This is an Instagram clone build with Rails and Hotwire. The app is build for educational purposes, not as a commercial product. I plan to use it as an example in an upcoming screencasts series about building modern web applications with Rails and Hotwire.
