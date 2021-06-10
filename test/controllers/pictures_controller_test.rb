@@ -26,4 +26,13 @@ class PicturesControllerTest < ActionDispatch::IntegrationTest
 
     assert_not_equal original_blob.key, @post.reload.picture.blob.key
   end
+
+  test "if the user doens't select a preset we use the original image" do
+    original_blob = @post.picture.blob
+
+    patch post_picture_path(@post, params: { post: { picture_data: "" }})
+    assert_redirected_to edit_post_caption_path(@post)
+
+    assert_equal original_blob.key, @post.reload.picture.blob.key
+  end
 end
