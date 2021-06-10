@@ -3,7 +3,7 @@ require "test_helper"
 class PicturesControllerTest < ActionDispatch::IntegrationTest
 
   setup do
-    @post = posts(:red_fuji)
+    @post = posts(:great_wave)
   end
 
   test "GET :edit" do

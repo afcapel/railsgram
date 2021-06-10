@@ -11,7 +11,7 @@ class PostControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "GET :show" do
-    post = posts(:red_fuji)
+    post = posts(:great_wave)
 
     get post_path(post)
     assert_response :success

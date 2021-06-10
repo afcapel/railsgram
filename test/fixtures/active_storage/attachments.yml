@@ -1,59 +1,9 @@
-evening_snow_picture:
-  name: picture
-  record: evening_snow (Post)
-  blob: evening_snow_blob
-
-flute_by_moonlight_picture:
-  name: picture
-  record: flute_by_moonlight (Post)
-  blob: flute_by_moonlight_blob
-
 great_wave_picture:
   name: picture
   record: great_wave (Post)
   blob: great_wave_blob
 
-red_fuji_picture:
-  name: picture
-  record: red_fuji (Post)
-  blob: red_fuji_blob
-
-three_beauties_picture:
-  name: picture
-  record: three_beauties (Post)
-  blob: three_beauties_blob
-
-woman_in_summer_garment_picture:
-  name: picture
-  record: woman_in_summer_garment (Post)
-  blob: woman_in_summer_garment_blob
-
-evening_snow_original_picture:
-  name: original_picture
-  record: evening_snow (Post)
-  blob: evening_snow_blob
-
-flute_by_moonlight_original_picture:
-  name: original_picture
-  record: flute_by_moonlight (Post)
-  blob: flute_by_moonlight_blob
-
 great_wave_original_picture:
   name: original_picture
   record: great_wave (Post)
   blob: great_wave_blob
-
-red_fuji_original_picture:
-  name: original_picture
-  record: red_fuji (Post)
-  blob: red_fuji_blob
-
-three_beauties_original_picture:
-  name: original_picture
-  record: three_beauties (Post)
-  blob: three_beauties_blob
-
-woman_in_summer_garment_original_picture:
-  name: original_picture
-  record: woman_in_summer_garment (Post)
-  blob: woman_in_summer_garment_blob

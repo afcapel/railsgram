@@ -1,11 +1,1 @@
-evening_snow_blob: <%= ActiveStorage::FixtureSet.blob filename: "evening_snow.jpg", service_name: "test" %>
-
-flute_by_moonlight_blob: <%= ActiveStorage::FixtureSet.blob filename: "flute_by_moonlight.jpg", service_name: "test" %>
-
 great_wave_blob: <%= ActiveStorage::FixtureSet.blob filename: "great_wave.jpg", service_name: "test" %>
-
-red_fuji_blob: <%= ActiveStorage::FixtureSet.blob filename: "red_fuji.jpg", service_name: "test" %>
-
-three_beauties_blob: <%= ActiveStorage::FixtureSet.blob filename: "three_beauties.jpg", service_name: "test" %>
-
-woman_in_summer_garment_blob: <%= ActiveStorage::FixtureSet.blob filename: "woman_in_summer_garment.jpg", service_name: "test" %>
