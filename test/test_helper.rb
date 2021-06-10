@@ -2,6 +2,9 @@ ENV['RAILS_ENV'] ||= 'test'
 require_relative "../config/environment"
 require "rails/test_help"
 
+require "active_storage/fixture_set"
+ActiveStorage::FixtureSet.file_fixture_path = Rails.root.join("test/fixtures/files").to_s
+
 class ActiveSupport::TestCase
   # Run tests in parallel with specified workers
   parallelize(workers: :number_of_processors)
