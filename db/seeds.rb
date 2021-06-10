@@ -5,3 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+require "active_storage/fixture_set"
+
+ActiveStorage::FixtureSet.file_fixture_path = Rails.root.join("test/fixtures/files").to_s
+
+puts "Seeding database..."
+
+Rake::Task["db:fixtures:load"].invoke
