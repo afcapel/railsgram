@@ -12,5 +12,8 @@ class ActiveSupport::TestCase
   # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.
   fixtures :all
 
-  # Add more helper methods to be used by all tests here...
+  # Do not print all fixtures when a variable is not defined in a test
+  def inspect
+    "Test #{self.class.name}"
+  end
 end
