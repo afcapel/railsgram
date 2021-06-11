@@ -6,6 +6,8 @@ class CreatePostTest < ApplicationSystemTestCase
     visit root_path
     assert_css "h3", text: "Railsgram"
 
+    wait_until_form_is_ready
+
     upload_new_picture
 
     assert page.has_content?("New post")
@@ -27,6 +29,10 @@ class CreatePostTest < ApplicationSystemTestCase
 
   def upload_new_picture
     attach_file "post_original_picture", file_fixture("red_fuji.jpg").to_s, make_visible: true
+  end
+
+  def wait_until_form_is_ready
+    assert page.has_css?("[data-form-ready-value=true]")
   end
 
   def wait_until_preset_preview_is_applied
