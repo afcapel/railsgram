@@ -1,0 +1,1 @@
+great_wave_blob: <%= ActiveStorage::FixtureSet.blob filename: "great_wave.jpg", service_name: "test" %>

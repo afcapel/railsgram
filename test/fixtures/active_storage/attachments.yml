@@ -1,0 +1,9 @@
+great_wave_picture:
+  name: picture
+  record: great_wave (Post)
+  blob: great_wave_blob
+
+great_wave_original_picture:
+  name: original_picture
+  record: great_wave (Post)
+  blob: great_wave_blob

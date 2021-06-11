@@ -1,11 +1,11 @@
 class PostsController < ApplicationController
-  before_action :set_post, only: [:show, :update]
 
   def index
     @posts = Post.has_picture.with_attached_picture.order(id: :desc).all
   end
 
   def show
+    @post = Post.find(params[:id])
   end
 
   def create

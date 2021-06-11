@@ -6,7 +6,7 @@ class CaptionsController < ApplicationController
 
   def update
     if @post.update(caption_params)
-      redirect_to posts_path
+      redirect_to root_path
     else
       render "edit", status: :unprocessable_entity
     end

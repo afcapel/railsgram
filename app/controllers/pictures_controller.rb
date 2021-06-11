@@ -6,7 +6,12 @@ class PicturesController < ApplicationController
   end
 
   def update
-    @post.picture = attachment_params
+    if post_params[:picture_data].present?
+      @post.picture = attachment_params
+    else
+      @post.picture.attach @post.original_picture.blob
+    end
+
     @post.save!
 
     redirect_to edit_post_caption_path(@post)

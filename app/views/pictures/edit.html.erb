@@ -1,7 +1,7 @@
 <main class="h-screen overflow-hidden">
   <div data-controller="picture" class="flex flex-col h-full">
 
-    <%= form_with model: @post, url: post_picture_path(@post), data: { controller: "form" } do |form| %>
+    <%= form_with model: @post, url: post_picture_path(@post), data: { controller: "form" }, id: "header_form" do |form| %>
       <div class="flex justify-between items-baseline p-4">
         <h1 class="font-medium mb-5">New post</h1>
         <%= form.hidden_field :picture_data, data: { "picture-target": "field" } %>
@@ -22,11 +22,12 @@
     <div id="presets" class="overflow-x-scroll w-full z-10 bg-white py-3 flex-none mt-auto">
       <div class="flex min-w-min pb-5">
         <% PicturesHelper::PRESETS.each do |preset| %>
-          <div class="preset text-center mr-1" data-controller="preset" data-preset-name-value="<%= preset %>">
+          <div class="preset text-center mr-1" data-controller="preset" data-preset-name-value="<%= preset %>" id="<%= preset.underscore %>_preset">
             <button type="button" data-action="click->picture#choosePreset">
               <span class="text-xs"><%= preset %></span>
               <div class="w-24 h-24 object-fill">
-                <%= image_tag @post.original_picture.variant(resize_to_fill: [128, 128]), data: { "preset-target": "thumbnail", action: "load->preset#applyPreset" } %>
+                <%= image_tag @post.original_picture.variant(resize_to_fill: [128, 128]), id: "#{preset.underscore}_preview",
+                  data: { "preset-target": "thumbnail", action: "load->preset#applyPreset" } %>
               </div>
             </button>
           </div>
