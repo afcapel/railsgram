@@ -209,6 +209,7 @@ DEPENDENCIES
   puma
   rails
   rexml
+  ruby-vips
   sass-rails
   selenium-webdriver
   spring

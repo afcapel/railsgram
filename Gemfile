@@ -14,6 +14,7 @@ gem "sass-rails"
 gem "hotwire-rails"
 gem "tailwindcss-rails"
 gem "image_processing"
+gem "ruby-vips"
 
 gem "bootsnap", require: false
 
