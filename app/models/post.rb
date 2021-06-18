@@ -1,4 +1,7 @@
 class Post < ApplicationRecord
+
+  belongs_to :person
+
   has_one_attached :picture
   has_one_attached :original_picture
 
