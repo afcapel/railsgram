@@ -7,6 +7,8 @@ gem "rails"
 gem "pg"
 gem "puma"
 
+gem "bcrypt"
+
 gem "jbuilder"
 gem "rexml" # required by activesupport. It's a bundled gem in ruby > 3
 
