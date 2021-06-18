@@ -5,4 +5,6 @@ Rails.application.routes.draw do
   end
 
   root "posts#index"
+
+  get "/:id", to: "profiles#show", as: "profile"
 end

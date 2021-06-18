@@ -1,4 +1,7 @@
-<div class="post mb-5 bg-white" id="<%= dom_id(post) %>">
+<div class="post mb-5 bg-white border border-gray-200" id="<%= dom_id(post) %>">
+  <div class="post-user p-3 font-medium">
+    <%= link_to post.person.username, profile_path(post.person.username) %>
+  </div>
   <div class="post-picture mb-3">
     <%= image_tag post.picture.variant(resize_to_limit: [448, 448]), class: "w-full h-auto" %>
   </div>
